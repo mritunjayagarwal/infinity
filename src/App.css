@@ -1,0 +1,29 @@
+.home-main section {
+    padding: 100px 0;
+    background: #040818;
+}
+
+.home-main .hero{
+    background: url(./Img/home/hero-bg.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-main .features-main{
+    background: #040818;
+    padding: 0;
+}
+
+.features-main .features{
+    background: url(./Img/home/feature/feature-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.feature-wrapper{
+    margin-left: -50px;
+}
