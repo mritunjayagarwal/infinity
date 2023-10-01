@@ -2,9 +2,12 @@ import React from 'react';
 import tokenomics from './components/Home/tokenomics';
 import about from './components/Home/about';
 import features from './components/Home/features';
+import Navbar from './components/Navbar';
 
 const Home = () => {
   return (
+    <>
+    <Navbar />
     <main className="home-main">
       <section className="hero d-flex align-items-center">
         <div className="container">
@@ -183,6 +186,7 @@ const Home = () => {
         </div>
       </section>
     </main>
+    </>
   )
 }
 

@@ -161,6 +161,81 @@ p{
     line-height: 24px; /* 150% */
 }
 
+/* Swap Page */
+
+.Uniswap{
+    height: 100vh;
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+
+.swap-wrap {
+    position: relative;
+    width: 30vw;
+    height: 360px;
+    text-align: center;
+    color: #252B37;
+    border-radius: 15px;
+  }
+  
+  /* .swap-wrap:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+  }
+  .swap-wrap:hover:before, .swap-wrap:hover:after {
+    animation: none;
+    opacity: 0;
+  }
+   */
+  
+  .swap-wrap::before {
+    content: "";
+    width: 102%;
+    height: 102%;
+    border-radius: 20px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #0054c2);
+      position: absolute;
+      z-index: -1;
+      top: -2%;
+      left: -1%;
+      animation: spin 15s linear infinite;
+  }
+  
+  .swap-wrap::after {
+    position: absolute;
+    content: "";
+    top: calc(360px / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.9);
+    filter: blur(calc(360px / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #0054c2);
+      opacity: 1;
+    transition: opacity 1s;
+    animation: spin 15s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  
 /* Trade Page */
 
 .trade-main{
