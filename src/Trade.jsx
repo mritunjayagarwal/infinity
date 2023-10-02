@@ -70,8 +70,8 @@ const Trade = () => {
                                     <p style = {{fontSize: "14px"}}>Index Price</p>
                                 </div>
                                 <div className='mt-5'>
-                                    <h2 className='text-white text-center'>Please connect your wallet.</h2>
-                                    <p className='text-center'><button className='btn btn-primary'>Connect Wallet</button></p>
+                                    <h2 className='text-center connect-wallet-para'>Please connect your wallet.</h2>
+                                    <p className='text-center'><button className='btn wallet-connect-btn'>Connect Wallet</button></p>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +139,7 @@ const Trade = () => {
                                         </div>
                                     </div>
                                     <div className='mt-5'>
-                                        <button className='btn btn-primary btn-block'>Connect Wallet</button>
+                                        <button className='btn wallet-connect-btn btn-block'>Connect Wallet</button>
                                     </div>
                                     <div className='mt-3'>
                                         <div className='d-flex justify-content-between'>
