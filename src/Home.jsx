@@ -108,25 +108,31 @@ const Home = () => {
       <section>
         <div className='container'>
           <div className='row d-flex justify-content-center'>
-            <div className='col-lg-3 border'>
-              <div>
-                <img src={require('./Img/home/advanced/1.svg')} alt="" />
-                <h1>Trade</h1>
-                <p>Open long or short positions with up to 100x leverage and 0% price impact</p>
+            <div className='col-lg-3'>
+              <div className = 'advanced-item'>
+                <div className='advanced-image-wrapper'>
+                  <img src={require('./Img/home/advanced/1.png')} alt="" />
+                </div>
+                <h1 className='advanced-heading'>Trade</h1>
+                <p className='advanced-para'>Open long or short positions with up to 100x leverage and 0% price impact</p>
               </div>
             </div>
-            <div className='col-lg-3 border'>
-              <div>
-                <img src={require('./Img/home/advanced/1.svg')} alt="" />
-                <h1>Trade</h1>
-                <p>Open long or short positions with up to 100x leverage and 0% price impact</p>
+            <div className='col-lg-3'>
+              <div className = 'advanced-item'>
+                <div className='advanced-image-wrapper'>
+                  <img src={require('./Img/home/advanced/2.png')} alt="" />
+                </div>
+                <h1 className='advanced-heading'>Trade</h1>
+                <p className='advanced-para'>Open long or short positions with up to 100x leverage and 0% price impact</p>
               </div>
             </div>
-            <div className='col-lg-3 border'>
-              <div>
-                <img src={require('./Img/home/advanced/1.svg')} alt="" />
-                <h1>Trade</h1>
-                <p>Open long or short positions with up to 100x leverage and 0% price impact</p>
+            <div className='col-lg-3'>
+              <div className = 'advanced-item'>
+                <div className='advanced-image-wrapper'>
+                  <img src={require('./Img/home/advanced/3.png')} alt="" />
+                </div>
+                <h1 className='advanced-heading'>Trade</h1>
+                <p className='advanced-para'>Open long or short positions with up to 100x leverage and 0% price impact</p>
               </div>
             </div>
           </div>
