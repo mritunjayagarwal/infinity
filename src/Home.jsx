@@ -122,8 +122,8 @@ const Home = () => {
                 <div className='advanced-image-wrapper'>
                   <img src={require('./Img/home/advanced/2.png')} alt="" />
                 </div>
-                <h1 className='advanced-heading'>Trade</h1>
-                <p className='advanced-para'>Open long or short positions with up to 100x leverage and 0% price impact</p>
+                <h1 className='advanced-heading'>Provide Liquidity</h1>
+                <p className='advanced-para'>Buy and stake MUXLP to earn protocol income and MUX rewards</p>
               </div>
             </div>
             <div className='col-lg-3'>
@@ -131,8 +131,8 @@ const Home = () => {
                 <div className='advanced-image-wrapper'>
                   <img src={require('./Img/home/advanced/3.png')} alt="" />
                 </div>
-                <h1 className='advanced-heading'>Trade</h1>
-                <p className='advanced-para'>Open long or short positions with up to 100x leverage and 0% price impact</p>
+                <h1 className='advanced-heading'>Stake</h1>
+                <p className='advanced-para'>Stake MCB to receive veMUX, which can be used to earn protocol income and MUX</p>
               </div>
             </div>
           </div>
