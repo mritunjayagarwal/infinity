@@ -7,12 +7,72 @@ const Trade = () => {
 
     return (
         <main>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
+                <a className="navbar-brand" href="/"><img src={require('./Img/logo.png')} style={{ "width": "80px" }} alt="" /></a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav mr-auto">
+                        <li className="nav-item active">
+                            <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/swap">Swap</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/trade">Trade</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <ul className="navbar-nav mr-auto">
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Link</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link disabled" href="#">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <section className='trade'>
                 <div className='px-3'>
                     <div className='row'>
                         <div className='col-lg-9 p-0'>
                             <div>
                                 <AdvancedChart widgetProps={{ "backgroundColor": "rgba(0, 0, 0, 1)", "height": "500" }} />
+                            </div>
+                            <div className=''>
+                                <div className='d-flex justify-content-between px-2 py-2' style = {{marginBottom: "-20px"}}>
+                                    <div className=''>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item mr-3 text-white">Positions</li>
+                                            <li class="list-inline-item mr-3" style = {{color: "#808080"}}>Open Orders</li>
+                                            <li class="list-inline-item mr-3" style = {{color: "#808080"}}>Trades</li>
+                                        </ul>
+                                    </div>
+                                    <div className='d-flex'>
+                                        <p className='switch mr-1' style = {{"margin-top": "3px", fontSize: "12px"}}>Aggregated Display</p>
+                                        <p className='switch' style = {{"margin-top": "0px"}}><input type="checkbox" id="switch" /><label for="switch">Toggle</label></p>
+                                    </div>
+                                </div>
+                                <div className='d-flex justify-content-between px-2 mt-0'>
+                                    <p style = {{fontSize: "14px"}}>Market</p>
+                                    <p style = {{fontSize: "14px"}}>Size</p>
+                                    <p style = {{fontSize: "14px"}}>Net Value</p>
+                                    <p style = {{fontSize: "14px"}}>Collateral</p>
+                                    <p style = {{fontSize: "14px"}}>Entry Price</p>
+                                    <p style = {{fontSize: "14px"}}>Index Price</p>
+                                </div>
+                                <div className='mt-5'>
+                                    <h2 className='text-white text-center'>Please connect your wallet.</h2>
+                                    <p className='text-center'><button className='btn btn-primary'>Connect Wallet</button></p>
+                                </div>
                             </div>
                         </div>
                         <div className='col-lg-3 p-0'>
