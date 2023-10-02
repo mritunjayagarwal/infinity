@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { providers, ethers } from 'ethers';
 import detectEthereumProvider from '@metamask/detect-provider';
 import { SwapWidget } from '@uniswap/widgets';
@@ -16,6 +16,22 @@ function Swap() {
   });
 
   const [connected, setConnected] = useState(false);
+
+  useEffect(async () => {
+    const ethereumProvider = await detectEthereumProvider();
+
+    if (ethereumProvider) {
+      const address = await window.ethereum.request({
+        method: 'eth_requestAccounts'
+      })
+      setAccount({
+        address: address[0],
+        provider: ethereumProvider
+      });
+
+      setConnected(true)
+    }
+  }, [])
 
   async function connectWallet() {
     const ethereumProvider = await detectEthereumProvider();

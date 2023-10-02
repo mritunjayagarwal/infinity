@@ -26,7 +26,7 @@ const Home = () => {
       <section>
         <div className='container'>
           <h1 className='text-center section-heading'>Level Up Every Trade</h1>
-          <div className='row'>
+          <div className='row d-flex justify-content-center'>
             {
               tokenomics.map((tokenomic) => {
                 const { id, heading, description, image } = tokenomic;
@@ -108,7 +108,7 @@ const Home = () => {
       <section>
         <div className='container'>
           <div className='row d-flex justify-content-center'>
-            <div className='col-lg-3'>
+            <div className='col-lg-4'>
               <div className = 'advanced-item'>
                 <div className='advanced-image-wrapper'>
                   <img src={require('./Img/home/advanced/1.png')} alt="" />
@@ -117,7 +117,7 @@ const Home = () => {
                 <p className='advanced-para'>Open long or short positions with up to 100x leverage and 0% price impact</p>
               </div>
             </div>
-            <div className='col-lg-3'>
+            <div className='col-lg-4'>
               <div className = 'advanced-item'>
                 <div className='advanced-image-wrapper'>
                   <img src={require('./Img/home/advanced/2.png')} alt="" />
@@ -126,7 +126,7 @@ const Home = () => {
                 <p className='advanced-para'>Buy and stake MUXLP to earn protocol income and MUX rewards</p>
               </div>
             </div>
-            <div className='col-lg-3'>
+            <div className='col-lg-4'>
               <div className = 'advanced-item'>
                 <div className='advanced-image-wrapper'>
                   <img src={require('./Img/home/advanced/3.png')} alt="" />
