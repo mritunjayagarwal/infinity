@@ -38,7 +38,7 @@ function Swap() {
     secondary: '#fff',
     interactive: '#fff',
     container: '#040818',
-    module: '#000000',
+    module: '#040818',
     accent: '#0054c2',
     outline: '#fff',
     dialog: '#040818',
@@ -90,6 +90,7 @@ function Swap() {
                   provider={account.provider}
                   JsonRpcEndpoint={JsonRpcEndpoint} width="100%" height="100%" theme={theme} hideConnectionUI = {true} />
               </div>
+              {/* <div style = {{"position":"absolute", "background": "#000", "height": "20px", "width": "26vw", "bottom": "15px", "left": "20px"}}></div> */}
             </div>
           </div>
         </div>
