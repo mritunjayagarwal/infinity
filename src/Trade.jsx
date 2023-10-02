@@ -16,13 +16,28 @@ const Trade = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                            <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+                            <a className="nav-link" href="/">Trade <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/swap">Swap</a>
+                            <a className="nav-link" href="/swap">Liquidity</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/trade">Trade</a>
+                            <a className="nav-link" href="/trade">Stake</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/trade">Leaderboard</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/trade">Redeem</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/trade">Stats</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/trade">Referral</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/trade">Ecosystem</a>
                         </li>
                     </ul>
                     <div>
@@ -48,12 +63,12 @@ const Trade = () => {
                                 <AdvancedChart widgetProps={{ "backgroundColor": "rgba(0, 0, 0, 1)", "height": "500" }} />
                             </div>
                             <div className=''>
-                                <div className='d-flex justify-content-between px-2 py-2' style = {{marginBottom: "-20px"}}>
+                                <div className='d-flex justify-content-between px-3 py-2' style = {{marginBottom: "-20px"}}>
                                     <div className=''>
                                         <ul class="list-inline">
-                                            <li class="list-inline-item mr-3 text-white">Positions</li>
-                                            <li class="list-inline-item mr-3" style = {{color: "#808080"}}>Open Orders</li>
-                                            <li class="list-inline-item mr-3" style = {{color: "#808080"}}>Trades</li>
+                                            <li class="list-inline-item mr-3 text-white" style = {{"fontSize": "13px"}}>Positions</li>
+                                            <li class="list-inline-item mr-3" style = {{color: "#808080", "fontSize": "13px"}}>Open Orders</li>
+                                            <li class="list-inline-item mr-3" style = {{color: "#808080", "fontSize": "13px"}}>Trades</li>
                                         </ul>
                                     </div>
                                     <div className='d-flex'>
@@ -61,7 +76,7 @@ const Trade = () => {
                                         <p className='switch' style = {{"margin-top": "0px"}}><input type="checkbox" id="switch" /><label for="switch">Toggle</label></p>
                                     </div>
                                 </div>
-                                <div className='d-flex justify-content-between px-2 mt-0'>
+                                <div className='d-flex justify-content-between px-3 mt-0'>
                                     <p style = {{fontSize: "14px"}}>Market</p>
                                     <p style = {{fontSize: "14px"}}>Size</p>
                                     <p style = {{fontSize: "14px"}}>Net Value</p>
@@ -69,7 +84,7 @@ const Trade = () => {
                                     <p style = {{fontSize: "14px"}}>Entry Price</p>
                                     <p style = {{fontSize: "14px"}}>Index Price</p>
                                 </div>
-                                <div className='mt-5'>
+                                <div className='my-5'>
                                     <h2 className='text-center connect-wallet-para'>Please connect your wallet.</h2>
                                     <p className='text-center'><button className='btn wallet-connect-btn'>Connect Wallet</button></p>
                                 </div>
