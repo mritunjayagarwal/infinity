@@ -36,8 +36,10 @@ const Home = () => {
                       <div className='tokenomic-image'>
                         <img src={require(`./Img/home/${image}`)} alt="" />
                       </div>
-                      <h1 className=''>{heading}</h1>
-                      <p>{description}</p>
+                      <div className='p-3'>
+                      <h1 className='tokenomic-heading'>{heading}</h1>
+                      <p className='tokenomic-para'>{description}</p>
+                      </div>
                     </div>
                   </div>
                 )
