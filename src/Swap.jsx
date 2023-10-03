@@ -64,7 +64,7 @@ function Swap() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div className='container'>
           <a className="navbar-brand" href="/"><img src={require('./Img/logo.png')} style={{ "width": "80px" }} alt="" /></a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,9 +96,9 @@ function Swap() {
         </div>
       </nav>
       <div className="Uniswap d-flex align-items-center justify-content-center">
-        <div>
+        <div style={{marginTop: "-150px"}}>
           <div className='section-heading' style={{ "margin-bottom": "20px" }}>Leverage Your Potential</div>
-          <p className='text-center w-50 mx-auto'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis asperiores soluta, voluptas ipsa rerum eaque dignissimos</p>
+          <p className='text-center swap-paragraph mx-auto'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis asperiores soluta, voluptas ipsa rerum eaque dignissimos</p>
           <div className='d-flex align-items-center justify-content-center mt-5'>
             <div className='swap-wrap'>
               <div>

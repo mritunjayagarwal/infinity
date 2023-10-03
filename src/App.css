@@ -137,8 +137,9 @@ p{
 
 .advanced-item{
   border-radius: 30px;
-border: 1px solid #262B39;
-padding: 1em;
+  border: 1px solid #262B39;
+  padding: 1em;
+  margin-bottom: 30px
 }
 
 .advanced-heading{
@@ -434,4 +435,57 @@ font-weight: 500;
   outline: none;
   transition: background 450ms ease-in;
   -webkit-appearance: none;
+}
+
+.swap-paragraph{
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .hero-heading{
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .section-heading{
+    line-height: 50px;
+  }
+
+  .feature-image{
+    display: none;
+  }
+
+  .swap-wrap{
+    width: 100% !important;
+    margin: 0 20px;
+  }
+
+  .swap-paragraph{
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  
+  .home-main section {
+    padding: 50px 0;
+  }
+  
+  .feature-image{
+    display: none;
+  }
+
+  .about-para{
+    width: 100%;
+  }
+
+  .swap-wrap{
+    width: 60%;
+    margin: 0 20px;
+  }
+
+  .swap-paragraph{
+    width: 70%;
+  }
 }

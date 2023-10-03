@@ -10,7 +10,7 @@ const Home = () => {
     <Navbar />
     <main className="home-main">
       <section className="hero d-flex align-items-center">
-        <div className="container">
+        <div className="container" style = {{ marginTop: "-100px"}}>
           <div className='row'>
             <div className='col-lg-6'>
               <div>
@@ -31,7 +31,7 @@ const Home = () => {
               tokenomics.map((tokenomic) => {
                 const { id, heading, description, image } = tokenomic;
                 return (
-                  <div className='col-lg-4' key={id}>
+                  <div className='col-lg-4 col-md-6' key={id}>
                     <div className='tokenomic-item'>
                       <div className='tokenomic-image'>
                         <img src={require(`./Img/home/${image}`)} alt="" />
@@ -57,13 +57,13 @@ const Home = () => {
                 const { id, heading, description, image } = item;
                 return (
                   <div className="row mt-5" key={id}>
-                    <div className={`col-lg-6 d-flex align-items-center ${heading === 'Smart Position Routing' ? 'order-md-2' : ''}`}>
+                    <div className={`col-lg-6 col-md-6 d-flex align-items-center ${heading === 'Smart Position Routing' ? 'order-md-2' : ''}`}>
                       <div>
                         <h1 class="about-heading">{heading}</h1>
                         <p className='about-para'>{description}</p>
                       </div>
                     </div>
-                    <div className='col-lg-6 d-flex align-items-center'>
+                    <div className='col-lg-6 col-md-6 d-flex align-items-center'>
                       <img src={require(`./Img/home/About/${image}`)} className='img-fluid' alt="" />
                     </div>
                   </div>
@@ -88,7 +88,7 @@ const Home = () => {
                       features.map((feature) => {
                         const { id, heading, description, image } = feature;
                         return (
-                          <div className='col-lg-6' key={id}>
+                          <div className='col-lg-6 col-md-6' key={id}>
                             <div className='feature-card'>
                               <img src={require(`./Img/home/feature/${image}`)} className = 'img-fluid mb-3' alt="" />
                               <h1 className='feature-heading mb-3'>{heading}</h1>
@@ -108,7 +108,7 @@ const Home = () => {
       <section>
         <div className='container'>
           <div className='row d-flex justify-content-center'>
-            <div className='col-lg-4'>
+            <div className='col-lg-4 col-md-6'>
               <div className = 'advanced-item'>
                 <div className='advanced-image-wrapper'>
                   <img src={require('./Img/home/advanced/1.png')} alt="" />
@@ -117,7 +117,7 @@ const Home = () => {
                 <p className='advanced-para'>Open long or short positions with up to 100x leverage and 0% price impact</p>
               </div>
             </div>
-            <div className='col-lg-4'>
+            <div className='col-lg-4 col-md-6'>
               <div className = 'advanced-item'>
                 <div className='advanced-image-wrapper'>
                   <img src={require('./Img/home/advanced/2.png')} alt="" />
@@ -126,7 +126,7 @@ const Home = () => {
                 <p className='advanced-para'>Buy and stake MUXLP to earn protocol income and MUX rewards</p>
               </div>
             </div>
-            <div className='col-lg-4'>
+            <div className='col-lg-4 col-md-6'>
               <div className = 'advanced-item'>
                 <div className='advanced-image-wrapper'>
                   <img src={require('./Img/home/advanced/3.png')} alt="" />
@@ -142,53 +142,53 @@ const Home = () => {
         <div className='container'>
           <h1 className='text-center section-heading'>Backers</h1>
           <div className='row mt-5'>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
-            <div className='col-lg-3 text-center'>
-              <img src={require('./Img/home/backers/1.png')} alt="" />
+            <div className='col-lg-3 col-md-4 col-6 text-center'>
+              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
           </div>
         </div>
