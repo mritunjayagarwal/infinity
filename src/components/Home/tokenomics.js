@@ -1,38 +1,38 @@
 const tokenomics = [
     {
         "id": 1,
-        "heading": "Zero Price Impact",
-        "description": "$100 or $1,000,000 position, the price impact will always be 0%",
+        "heading": "No Price Fluctuation",
+        "description": "Whether a $100 or $1,000,000 position, the price change remains at 0%.",
         "image": "toke-1.svg"
     },
     {
         "id": 2,
-        "heading": "Zero Price Impact",
-        "description": "$100 or $1,000,000 position, the price impact will always be 0%",
+        "heading": "100x Leverage Boost",
+        "description": "Maximize trading potential with 100x leverage.",
         "image": "toke-2.svg"
     },
     {
         "id": 3,
-        "heading": "Zero Price Impact",
-        "description": "$100 or $1,000,000 position, the price impact will always be 0%",
+        "heading": "Self-Controlled",
+        "description": "Trade through your Web3 wallet - Your key, your possessions.",
         "image": "toke-3.svg"
     },
     {
         "id": 4,
-        "heading": "Zero Price Impact",
-        "description": "$100 or $1,000,000 position, the price impact will always be 0%",
+        "heading": "Liquidity Aggregation",
+        "description": "LQX directs positions to optimal liquidity sources to accommodate desired sizes.",
         "image": "toke-4.svg"
     },
     {
         "id": 5,
-        "heading": "Zero Price Impact",
-        "description": "$100 or $1,000,000 position, the price impact will always be 0%",
+        "heading": "Multi-Chain Compatible",
+        "description": "Trade across all integrated networks with consistent liquidity depth.",
         "image": "toke-5.svg"
     },
     {
         "id": 6,
-        "heading": "Zero Price Impact",
-        "description": "$100 or $1,000,000 position, the price impact will always be 0%",
+        "heading": "Ultra Fast",
+        "description": "Rapid blockchain transaction speeds.",
         "image": "toke-6.svg"
     }
 ]

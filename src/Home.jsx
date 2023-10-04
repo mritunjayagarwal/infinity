@@ -14,9 +14,9 @@ const Home = () => {
           <div className='row'>
             <div className='col-lg-6'>
               <div>
-                <h1 className='hero-highlight'>DECENTRALIZED SELF-CUSTODIAL LEVERAGED TRADING</h1>
-                <h1 className='hero-heading'>Supercharged for Traders</h1>
-                <p>Trade crypto with zero price impact, up to 100x leverage and aggregated liquidity. MUX protocol takes care of all the hassles so that you can experience optimized DEX trading on our platform.</p>
+                <h1 className='hero-highlight text-uppercase'>Decentralized Trading &amp; Aggregation Platform.</h1>
+                <h1 className='hero-heading'>Dive into Deep Liquidity</h1>
+                <p>Trade crypto seamlessly with zero price impact, up to 100x leverage, and combined liquidity. LQX protocol handles the complexities, ensuring you enjoy optimized DEX trading on our platform.</p>
                 <button className='btn hero-btn'>Start Trading</button>
               </div>
             </div>
@@ -31,7 +31,7 @@ const Home = () => {
               tokenomics.map((tokenomic) => {
                 const { id, heading, description, image } = tokenomic;
                 return (
-                  <div className='col-lg-4 col-md-6' key={id}>
+                  <div className='col-lg-4 col-md-6 mt-4' key={id}>
                     <div className='tokenomic-item'>
                       <div className='tokenomic-image'>
                         <img src={require(`./Img/home/${image}`)} alt="" />
@@ -50,7 +50,7 @@ const Home = () => {
       </section>
       <section>
         <div className='container'>
-          <h1 className='text-center section-heading'>All-In-One Leveraged Trading Platform</h1>
+          <h1 className='text-center section-heading'>Advanced Platform for Enhanced Leverage Trading.</h1>
           <div>
             {
               about.map((item) => {
