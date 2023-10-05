@@ -140,55 +140,43 @@ const Home = () => {
       </section>
       <section>
         <div className='container'>
-          <h1 className='text-center section-heading'>Backers</h1>
+          <h1 className='text-center section-heading'>Integration with Leading DEX Swaps</h1>
           <div className='row mt-5'>
             <div className='col-lg-3 col-md-4 col-6 text-center'>
               <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
             </div>
             <div className='col-lg-3 col-md-4 col-6 text-center'>
-              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
+              <img src={require('./Img/home/backers/2.png')} className = 'img-fluid' alt="" />
             </div>
             <div className='col-lg-3 col-md-4 col-6 text-center'>
-              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
+              <img src={require('./Img/home/backers/3.png')} className = 'img-fluid' alt="" />
             </div>
             <div className='col-lg-3 col-md-4 col-6 text-center'>
-              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
+              <img src={require('./Img/home/backers/4.png')} className = 'img-fluid' alt="" />
             </div>
             <div className='col-lg-3 col-md-4 col-6 text-center'>
-              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
+              <img src={require('./Img/home/backers/5.png')} className = 'img-fluid' alt="" />
             </div>
             <div className='col-lg-3 col-md-4 col-6 text-center'>
-              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
+              <img src={require('./Img/home/backers/6.png')} className = 'img-fluid' alt="" />
             </div>
             <div className='col-lg-3 col-md-4 col-6 text-center'>
-              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
+              <img src={require('./Img/home/backers/7.png')} className = 'img-fluid' alt="" />
             </div>
             <div className='col-lg-3 col-md-4 col-6 text-center'>
-              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
+              <img src={require('./Img/home/backers/8.png')} className = 'img-fluid' alt="" />
             </div>
             <div className='col-lg-3 col-md-4 col-6 text-center'>
-              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
+              <img src={require('./Img/home/backers/9.png')} className = 'img-fluid' alt="" />
             </div>
             <div className='col-lg-3 col-md-4 col-6 text-center'>
-              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
+              <img src={require('./Img/home/backers/10.png')} className = 'img-fluid' alt="" />
             </div>
             <div className='col-lg-3 col-md-4 col-6 text-center'>
-              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
+              <img src={require('./Img/home/backers/11.png')} className = 'img-fluid' alt="" />
             </div>
             <div className='col-lg-3 col-md-4 col-6 text-center'>
-              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
-            </div>
-            <div className='col-lg-3 col-md-4 col-6 text-center'>
-              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
-            </div>
-            <div className='col-lg-3 col-md-4 col-6 text-center'>
-              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
-            </div>
-            <div className='col-lg-3 col-md-4 col-6 text-center'>
-              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
-            </div>
-            <div className='col-lg-3 col-md-4 col-6 text-center'>
-              <img src={require('./Img/home/backers/1.png')} className = 'img-fluid' alt="" />
+              <img src={require('./Img/home/backers/12.png')} className = 'img-fluid' alt="" />
             </div>
           </div>
         </div>
