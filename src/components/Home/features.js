@@ -1,26 +1,26 @@
 const features = [
     {
         "id": 1,
-        "heading": "Universal Liquidity",
-        "description": "The MUX liquidity pool unifies assets from all deployed chains, supported by multiplexing layer infrastructures.",
+        "heading": "Unified Liquidity",
+        "description": "The LQX liquidity pool consolidates assets from every integrated chain, fortified by advanced layer infrastructures.",
         "image": "1.svg"
     },
     {
         "id": 2,
-        "heading": "Liquidity Multiplexing",
-        "description": "Pooled liquidity will be dynamically shared between MUX margin trading and third-party DEX mining across chains to achieve high utilization.",
+        "heading": "Dynamic Liquidity Sharing",
+        "description": "Liquidity from the pool is adeptly distributed between LQX margin trading and third-party DEX mining across chains, ensuring optimal utilization.",
         "image": "2.svg"
     },
     {
         "id": 3,
-        "heading": "Liquidity Aggregation",
-        "description": "MUX aggregates scattered liquidity from different protocols, further offering a consistent and convenient trading experience.",
+        "heading": "Liquidity Consolidation",
+        "description": "LQX brings together dispersed liquidity from various protocols, delivering a seamless and efficient trading journey.",
         "image": "3.svg"
     },
     {
         "id": 4,
-        "heading": "Multi-Asset Pool",
-        "description": "MUX liquidity pool holds a portfolio of blue-chip assets and uses dynamic open interest caps to eliminate traders' counterparty risks.",
+        "heading": "Diverse Asset Pool",
+        "description": "LQX's liquidity pool maintains a collection of premium assets and employs dynamic open interest caps to protect traders from counterparty risks.",
         "image": "4.svg"
     }
 ]

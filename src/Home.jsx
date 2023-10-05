@@ -57,7 +57,7 @@ const Home = () => {
                 const { id, heading, description, image } = item;
                 return (
                   <div className="row mt-5" key={id}>
-                    <div className={`col-lg-6 col-md-6 d-flex align-items-center ${heading === 'Smart Position Routing' ? 'order-md-2' : ''}`}>
+                    <div className={`col-lg-6 col-md-6 d-flex align-items-center ${heading === 'Intelligent Position Allocation' ? 'order-md-2' : ''}`}>
                       <div>
                         <h1 class="about-heading">{heading}</h1>
                         <p className='about-para'>{description}</p>
@@ -82,7 +82,7 @@ const Home = () => {
               </div>
               <div className='col-lg-8 order-md-2'>
                 <div className='features-wrapper'>
-                  <h1 className='section-heading text-left mt-5'>New Technology Behind Every Feature</h1>
+                  <h1 className='section-heading text-left mt-5'>Innovative Tech Powers Each Feature</h1>
                   <div className='row'>
                     {
                       features.map((feature) => {
@@ -114,7 +114,7 @@ const Home = () => {
                   <img src={require('./Img/home/advanced/1.png')} alt="" />
                 </div>
                 <h1 className='advanced-heading'>Trade</h1>
-                <p className='advanced-para'>Open long or short positions with up to 100x leverage and 0% price impact</p>
+                <p className='advanced-para'>Initiate long or short stances with up to 100x leverage without any price fluctuations.</p>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -122,8 +122,8 @@ const Home = () => {
                 <div className='advanced-image-wrapper'>
                   <img src={require('./Img/home/advanced/2.png')} alt="" />
                 </div>
-                <h1 className='advanced-heading'>Provide Liquidity</h1>
-                <p className='advanced-para'>Buy and stake MUXLP to earn protocol income and MUX rewards</p>
+                <h1 className='advanced-heading'>Boost Liquidity</h1>
+                <p className='advanced-para'>Purchase and stake LQXLP to accumulate protocol revenue and LQX bonuses.</p>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -131,8 +131,8 @@ const Home = () => {
                 <div className='advanced-image-wrapper'>
                   <img src={require('./Img/home/advanced/3.png')} alt="" />
                 </div>
-                <h1 className='advanced-heading'>Stake</h1>
-                <p className='advanced-para'>Stake MCB to receive veMUX, which can be used to earn protocol income and MUX</p>
+                <h1 className='advanced-heading'>Invest</h1>
+                <p className='advanced-para'>Deposit mLQX &amp; LQX to be eligible for generating protocol earnings and LQX rewards.</p>
               </div>
             </div>
           </div>

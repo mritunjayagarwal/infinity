@@ -1,20 +1,20 @@
 const about = [
     {
         "id": 1,
-        "heading": "Optimized Trading Cost",
-        "description": "MUX selects the most suitable liquidity route and minimizes the composite cost for traders while meeting the needs of opening positions.",
+        "heading": "Cost-Efficient Trading",
+        "description": "LQX identifies the optimal liquidity path, reducing overall expenses for traders and ensuring seamless position initiation.",
         "image": "1.png"
     },
     {
         "id": 2,
-        "heading": "Smart Position Routing",
-        "description": "MUX selects the most suitable liquidity route and minimizes the composite cost for traders while meeting the needs of opening positions.",
+        "heading": "Intelligent Position Allocation",
+        "description": "LQX intelligently directs positions to appropriate underlying trading protocols, considering market conditions, position dimensions, and user choices",
         "image": "2.png"
     },
     {
         "id": 3,
-        "heading": "Optimized Trading Cost",
-        "description": "MUX selects the most suitable liquidity route and minimizes the composite cost for traders while meeting the needs of opening positions.",
+        "heading": "Enhanced Leverage",
+        "description": "While LQX offers up to 100x leverage within its native pool, it can also provide extra margin for traders to achieve up to 100x leverage on integrated underlying protocols",
         "image": "3.png"
     }
 ]
