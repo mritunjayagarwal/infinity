@@ -64,41 +64,39 @@ function Swap() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <div className='container'>
-          <a className="navbar-brand" href="/"><img src={require('./Img/logo.png')} style={{ "width": "80px" }} alt="" /></a>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
+    <nav className="navbar navbar-expand-md navbar-dark bg-transparent">
+      <div className='container'>
+        <a className="navbar-brand" href="/"><img src={require('./Img/logo.png')} style={{ "width": "80px" }} alt="" /></a>
+        <button className="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="/">Docs <span className="sr-only">(current)</span></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/swap">Community</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/swap">Launch App</a>
+            </li>
+          </ul>
+          <div>
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
-              </li>
-              <li className="nav-item active">
-                <a className="nav-link" href="/swap">Swap</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link disabled" href="/trade">Trade</a>
+              <a className='nav-link btn hero-btn' onClick={connectWallet} style = {{color: "#fff", padding: "0.4em 0.5em"}}>{connected ? 'Wallet Connected': 'Connect Wallet'}</a>
               </li>
             </ul>
-            <div>
-              <ul className="navbar-nav mr-auto">
-                <li className="nav-item active">
-                  <div>
-                    <button onClick={connectWallet}>{connected ? 'Wallet Connected': 'Connect Wallet'}</button>
-                  </div>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
       <div className="Uniswap d-flex align-items-center justify-content-center">
         <div style={{marginTop: "-150px"}}>
-          <div className='section-heading' style={{ "margin-bottom": "20px" }}>Leverage Your Potential</div>
-          <p className='text-center swap-paragraph mx-auto'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis asperiores soluta, voluptas ipsa rerum eaque dignissimos</p>
+          <div className='section-heading swap-heading' style={{ "margin-bottom": "20px" }}>LiquiDex Swap Aggregator</div>
+          <p className='text-center swap-paragraph mx-auto'>Seamless, secure asset exchanges. Connect your wallet and elevate your trading experience.</p>
           <div className='d-flex align-items-center justify-content-center mt-5'>
             <div className='swap-wrap'>
               <div>

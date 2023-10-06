@@ -50,7 +50,7 @@ const Home = () => {
       </section>
       <section>
         <div className='container'>
-          <h1 className='text-center section-heading'>Advanced Platform for Enhanced Leverage Trading.</h1>
+          <h1 className='text-center section-heading'>Advanced Platform for Enhanced Leverage Trading</h1>
           <div>
             {
               about.map((item) => {

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
 
 body{
     background: #040818;
@@ -451,6 +451,7 @@ font-weight: 500;
   }
 
   .section-heading{
+    font-size: 35px;
     line-height: 50px;
   }
 
@@ -465,6 +466,10 @@ font-weight: 500;
 
   .swap-paragraph{
     width: 90%;
+  }
+
+  .swap-heading{
+    margin-top: 100px !important
   }
 }
 
