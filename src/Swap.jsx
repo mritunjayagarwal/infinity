@@ -84,7 +84,7 @@ function Swap() {
               <a className="nav-link" href="/swap">Community</a>
             </li>
             <li className="nav-item mr-3">
-              <a className="nav-link" href="/trade">Swap</a>
+              <a className="nav-link" href="/swap">Swap</a>
             </li>
               <li className="nav-item">
               <a className='nav-link btn hero-btn' onClick={connectWallet} style = {{color: "#fff", padding: "0.4em 0.5em"}}>{connected ? 'Wallet Connected': 'Connect Wallet'}</a>
