@@ -21,8 +21,11 @@ const Navbar = () => {
               <li className="nav-item mr-3">
                 <a className="nav-link" href="/swap">Community</a>
               </li>
+              <li className="nav-item mr-3">
+                <a className="nav-link" href="/swap">Swap</a>
+              </li>
               <li className="nav-item">
-                <a className="nav-link btn hero-btn" href="/swap" style={{ color: "#fff", padding: "0.4em 0.5em" }}>Launch App</a>
+                <a className="nav-link btn hero-btn" href="/trade" style={{ color: "#fff", padding: "0.4em 0.5em" }}>Launch App</a>
               </li>
             </ul>
           </div>
