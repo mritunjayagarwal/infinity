@@ -73,6 +73,10 @@ function Swap() {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
+          
+          </ul>
+          <div>
+            <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
               <a className="nav-link" href="/">Docs <span className="sr-only">(current)</span></a>
             </li>
@@ -80,11 +84,8 @@ function Swap() {
               <a className="nav-link" href="/swap">Community</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/swap">Launch App</a>
+              <a className="nav-link" href="/trade">Trade</a>
             </li>
-          </ul>
-          <div>
-            <ul className="navbar-nav mr-auto">
               <li className="nav-item">
               <a className='nav-link btn hero-btn' onClick={connectWallet} style = {{color: "#fff", padding: "0.4em 0.5em"}}>{connected ? 'Wallet Connected': 'Connect Wallet'}</a>
               </li>
