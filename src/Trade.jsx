@@ -1,9 +1,52 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AdvancedChart } from "react-tradingview-embed";
+import { providers, ethers } from 'ethers';
+import detectEthereumProvider from '@metamask/detect-provider';
+const JsonRpcEndpoint = `https://mainnet.infura.io/v3/fa9d5dbaaaa741c2b3f37a1b2953c496`;
+const JsonRpcProvider = new providers.JsonRpcProvider(JsonRpcEndpoint);
+const provider = new ethers.providers.Web3Provider(JsonRpcProvider);
 
 const Trade = () => {
 
     const [rangeval, setRangeval] = useState(0);
+    const [account, setAccount] = useState({
+        address: '',
+        provider: provider
+      });
+    
+      const [connected, setConnected] = useState(false);
+    
+      useEffect(async () => {
+        const ethereumProvider = await detectEthereumProvider();
+    
+        if (ethereumProvider) {
+          const address = await window.ethereum.request({
+            method: 'eth_requestAccounts'
+          })
+          setAccount({
+            address: address[0],
+            provider: ethereumProvider
+          });
+    
+          setConnected(true)
+        }
+      }, [])
+    
+      async function connectWallet() {
+        const ethereumProvider = await detectEthereumProvider();
+    
+        if (ethereumProvider) {
+          const address = await window.ethereum.request({
+            method: 'eth_requestAccounts'
+          })
+          setAccount({
+            address: address[0],
+            provider: ethereumProvider
+          });
+    
+          setConnected(true)
+        }
+      }
 
     return (
         <main>
@@ -60,8 +103,8 @@ const Trade = () => {
                                     <p style={{ fontSize: "14px" }}>Index Price</p>
                                 </div>
                                 <div className='my-5'>
-                                    <h2 className='text-center connect-wallet-para'>Please connect your wallet.</h2>
-                                    <p className='text-center'><button className='btn wallet-connect-btn'>Connect Wallet</button></p>
+                                    <h2 className='text-center connect-wallet-para'>{connected ? 'Your wallet is successfully connected': 'Please connect your wallet.'}</h2>
+                                    <p className='text-center'><button className='btn wallet-connect-btn' onClick={connectWallet}>{connected ? 'Wallet Connected': 'Connect Wallet'}</button></p>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +186,7 @@ const Trade = () => {
                                         </div>
                                     </div>
                                     <div className='mt-5'>
-                                        <button className='btn wallet-connect-btn btn-block'>Connect Wallet</button>
+                                        <button className='btn wallet-connect-btn btn-block' onClick={connectWallet}>{connected ? 'Swap': 'Connect Wallet'}</button>
                                     </div>
                                     <div className='mt-3 px-2'>
                                         <div className='d-flex justify-content-between'>
