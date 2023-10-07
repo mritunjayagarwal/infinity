@@ -15,10 +15,10 @@ const Navbar = () => {
           </ul>
           <div>
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
+              <li className="nav-item active mr-2">
                 <a className="nav-link" href="/">Docs <span className="sr-only">(current)</span></a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item mr-3">
                 <a className="nav-link" href="/swap">Community</a>
               </li>
               <li className="nav-item">
