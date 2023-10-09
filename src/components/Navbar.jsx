@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import whitepaper from '../whitepaper.pdf'
 
 const Navbar = () => {
   return (
@@ -15,8 +16,8 @@ const Navbar = () => {
           </ul>
           <div>
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active mr-2">
-                <a className="nav-link" href="/">Docs <span className="sr-only">(current)</span></a>
+              <li className="nav-item mr-2">
+                <a className="nav-link" href={whitepaper} target = "_blank">Docs</a>
               </li>
               <li className="nav-item mr-3">
                 <a className="nav-link" href="/swap">Community</a>
